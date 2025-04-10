@@ -24,6 +24,8 @@ public interface CommentService {
     ListResponse<?> getAllCommentByFather(String fatherId);
 
     ListResponse<?> getListCommentOfPage(Integer page);
+
     DataResponse<?> disableComment(String id);
+
     DataResponse<?> enableComment(String id);
 }
