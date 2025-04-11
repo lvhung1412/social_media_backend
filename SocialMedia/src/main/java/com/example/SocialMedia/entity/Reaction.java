@@ -12,10 +12,8 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "reaction")
 public class Reaction {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
 
+    @Id
     private String name;
 
     @NotNull(message = "Status is required")

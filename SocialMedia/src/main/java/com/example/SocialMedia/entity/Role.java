@@ -12,9 +12,6 @@ import lombok.NoArgsConstructor;
 @Table(name = "role")
 public class Role {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-
     @Column(length = 45, unique = true)
     private String name;
 }

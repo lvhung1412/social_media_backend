@@ -60,7 +60,7 @@ public class ServiceUtils {
         return UUID.randomUUID().toString();
     }
 
-    public List<SearchUserResponseDTO> recomendFriend(User user) throws TasteException {
+    public List<SearchUserResponseDTO> recommendFriend(User user) throws TasteException {
         List<ModelAI> list = userRepository.getDataSourceForAI(200);
         List<String> listUserName = new ArrayList<>();
         List<String> listItemName = new ArrayList<>();
